@@ -1,16 +1,17 @@
 {
-  "name": "webhook",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "crtv-webhook",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Zac-Relay: AgentMail → Telegram + Eve Cursor webhook",
+  "main": "api/webhook.js",
   "scripts": {
-    "start-webhook-app": "node app.js"
+    "test": "node scripts/smoke-parse.js",
+    "smoke-parse": "node scripts/smoke-parse.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.19.2"
+    "svix": "^1.37.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
